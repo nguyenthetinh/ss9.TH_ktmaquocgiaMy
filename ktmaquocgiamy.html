@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemtrama(ma) {
+        regexp=/^[0-9]{5}(?:-[0-9]{4})?$/;
+        if (regexp.test(ma)){
+            return true;
+        }
+        return false;
+
+    }
+    let a=prompt("Nhap ma:");
+    alert(kiemtrama(a))
+</script>
+</body>
+</html>
